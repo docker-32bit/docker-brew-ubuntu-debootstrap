@@ -42,6 +42,9 @@ fi
 
 
 for version in "${versions[@]}"; do
+        if [[ "$version" == "vendor" ]]; then
+                continue
+        fi
 	dir="$(readlink -f "$version")"
 	variant="$(get_part "$dir" variant 'minbase')"
 	components="$(get_part "$dir" components 'main')"
