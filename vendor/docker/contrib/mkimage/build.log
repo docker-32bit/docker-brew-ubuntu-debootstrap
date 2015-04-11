@@ -1,0 +1,3 @@
++ mkdir -p /home/vagrant/bootstrap32/14.04/docker-brew-ubuntu-debootstrap-665236ab3a0502f974c9c41d8b36475a06d7e2ce/mkimage/rootfs
++ debootstrap --variant=minbase --components=main,universe --arch=i386 mkimage /home/vagrant/bootstrap32/14.04/docker-brew-ubuntu-debootstrap-665236ab3a0502f974c9c41d8b36475a06d7e2ce/mkimage/rootfs http://archive.ubuntu.com/ubuntu
+E: No such script: /usr/share/debootstrap/scripts/mkimage

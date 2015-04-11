@@ -1,1 +1,1 @@
-/home/tianon/docker/docker/contrib/mkimage.sh
+vendor/docker/contrib/mkimage.sh

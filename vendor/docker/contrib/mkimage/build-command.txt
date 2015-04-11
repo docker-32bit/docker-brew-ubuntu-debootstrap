@@ -1,0 +1,3 @@
+mkimage.sh -d . debootstrap --variant=minbase --components=main,universe --arch=i386 mkimage http://archive.ubuntu.com/ubuntu
+
+https://github.com/docker/docker/blob/master/contrib/mkimage.sh
