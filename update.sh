@@ -52,8 +52,8 @@ for version in "${versions[@]}"; do
 	suite="$(get_part "$dir" suite "$version")"
 	mirror="$(get_part "$dir" mirror '')"
 	script="$(get_part "$dir" script '')"
-	args=("--arch=i386")
 	args=( -d "$dir" debootstrap )
+	args+=("--arch=i386")
 	[ -z "$variant" ] || args+=( --variant="$variant" )
 	[ -z "$components" ] || args+=( --components="$components" )
 	[ -z "$include" ] || args+=( --include="$include" )
